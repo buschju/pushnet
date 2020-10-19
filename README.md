@@ -10,8 +10,8 @@ European Conference on Artificial Intelligence (ECAI) 2020
 ## Setup
 
 - Install the required packages specified in the file `requirements.txt`, e.g., using the command `pip install -r requirements.txt`.
-- Additionally, *PyTorch* version *1.6.0* is required and can be installed depending on your system and CUDA version following this guide: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/).
-- Our models are implemented using *PyTorch Geometric* and require the following packages which can be installed depending on your system and CUDA version following this guide: [https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html).
+- Additionally, PyTorch version 1.6.0 is required and can be installed depending on your system and CUDA version following this guide: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/).
+- Our models are implemented using PyTorch Geometric and require the following packages which can be installed depending on your system and CUDA version following this guide: [https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html).
     ```
     torch_scatter==2.0.5
     torch_sparse==0.6.7
@@ -28,6 +28,7 @@ We provide a demonstration of how to train our models from loading and preproces
 - For efficiency, the script loads previously pre-processed datasets. Datasets can be pre-processed using the script `src/preprocess_datasets.py`.
 - Parameters need to be specified in a config-file in *JSON*-syntax. We uploaded the config-files used in our experiments into the folder `config`.
 - Results will be tracked by *MLflow*. We uploaded the results from our runs which can be explored using the notebook `src/evaluate_results.ipynb`.
+- *Note: This is a re-implementation of the original code used to produce the results reported in the paper. Due to a different environment, different random seed, etc., the results reported here slightly differ from the results reported in the paper.*
 
 ## Cite
 If you use our models or any of the provided code or material, please cite our paper:
