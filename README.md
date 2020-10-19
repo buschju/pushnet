@@ -27,6 +27,7 @@ We provide a demonstration of how to train our models from loading and pre-proce
 - To run experiments or to reproduce the results reported in the paper, you can use the script `src/run_experiment.py`.
 - For efficiency, the script loads previously pre-processed datasets. Datasets can be pre-processed using the script `src/preprocess_datasets.py`.
 - Parameters need to be specified in a config-file in *JSON*-syntax. We uploaded the config-files used in our experiments into the folder `config`.
+- The provided configs allow for training on 12GB GPUs. We ran our experiments on an NVIDIA GeForce RTX 2080 Ti GPU with 12GB memory. If you have more memory available, you can increase or disable the parameter `batch_size_message_passing` for faster training with identical results or decrease the hyper-parameter `epsilon`. If you have less GPU memory available, you can decrease `batch_size_message_passing` or increase `epsilon`.
 - Results will be tracked by *MLflow*. We uploaded the results from our runs which can be explored using the notebook `src/evaluate_results.ipynb`.
 - *Note: This is a re-implementation of the original code used to produce the results reported in the paper. Due to a different environment, different random seed, etc., the results reported here slightly differ from the results reported in the paper.*
 
