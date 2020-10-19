@@ -21,7 +21,7 @@ European Conference on Artificial Intelligence (ECAI) 2020
     ``` 
   
 ## Demo
-We provide a demonstration of how to train our models from loading and preprocessing data to evaluating the trained model. Please check out the notebook `src/demo.ipynb`.
+We provide a demonstration of how to train our models from loading and pre-processing data to evaluating the trained model. Please check out the notebook `src/demo.ipynb`.
 
 ## Running Experiments
 - To run experiments or to reproduce the results reported in the paper, you can use the script `src/run_experiment.py`.
