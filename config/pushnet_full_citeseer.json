@@ -1,0 +1,29 @@
+{
+  "seed": 0,
+  "dataset_name": "Citeseer",
+  "dataset_parameters": {
+    "only_largest_cc": true,
+    "add_self_loops": true,
+    "adj_normalization": "sym",
+    "x_normalization": "l1",
+    "alphas": [5.00e-2, 1.00e-1, 2.00e-1],
+    "epsilon": 1.00e-5
+  },
+  "model_name": "PushNet",
+  "model_parameters": {
+    "hidden_size": 64,
+    "dropout": 0.5,
+    "bias": true,
+    "variant": "Full"
+  },
+  "training_parameters": {
+    "l2_reg": 1e-2,
+    "learning_rate": 5e-3,
+    "patience": 100,
+    "max_epochs": 10000
+  },
+  "run_parameters": {
+    "num_random_splits": 20,
+    "num_runs_per_split": 5
+  }
+}
